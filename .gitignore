@@ -30,3 +30,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/jsLinters/eslint.xml
+/.idea/.gitignore
+/.idea/kapeesh.dev-next.iml
+/.idea/modules.xml
+/.idea/vcs.xml
