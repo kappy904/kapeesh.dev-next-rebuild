@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       colors: {
         purple: '#5a1f9f',
-        green: '#008521',
-        blue: '#15009E',
+        orange: '#f96316',
+        blue: '#00b4f2',
       },
       fontFamily: {
         display: ['Merriweather Sans', 'sans-serif'],

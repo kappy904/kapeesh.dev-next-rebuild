@@ -15,7 +15,7 @@ const Testimonials = ({testimonials}) => {
 
                     </picture>
                     <div>
-                        <h2 className="font-secondary tracking-tighter leading-5 md:text-3xl text-2xl mb-2 font-extrabold">
+                        <h2 className="font-secondary tracking-tighter leading-5 md:text-3xl text-2xl mb-2 font-extrabold text-purple">
                             { testimonial?.fields.name }
                         </h2>
                         <h3 className="font-bold font-primary mb-6">

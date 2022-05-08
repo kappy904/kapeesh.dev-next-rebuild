@@ -5,7 +5,7 @@ import { Props } from './Header.types'
 const Header: React.FC<Props> = ({title, pageTitle, subtitle}) => {
     return (
         <div className={ `${ styles.animatedHeader } relative overflow-hidden mb-6 md:mb-10` }>
-            <h1 className="font-primary pointer-events-none select-none font-bold" style={ {color: 'rgba(11, 149, 96, 0.11)'} }>
+            <h1 className="font-primary pointer-events-none select-none font-bold">
                 { title }
             </h1>
             <div className="absolute bottom-0">

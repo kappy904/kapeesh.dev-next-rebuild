@@ -8,7 +8,8 @@
     font-size: 17em;
     letter-spacing: -22px;
     line-height: 280px;
-    color: purple;
+    color: theme('colors.blue');
+    opacity: .15;
 }
 
 @media screen and (max-width: 640px) {
@@ -26,7 +27,7 @@
     opacity: 0;
     animation: fade-in 4s ease;
     animation-fill-mode: forwards;
-    color: #14029c;
+    color: theme('colors.blue');
 }
 
 @media screen and (max-width: 640px) {
@@ -41,6 +42,7 @@
     opacity: 0;
     animation: letter-spacing 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);;
     animation-fill-mode: forwards;
+    color: theme('colors.purple');
 }
 
 @media screen and (max-width: 640px) {
