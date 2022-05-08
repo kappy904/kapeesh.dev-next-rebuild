@@ -3,9 +3,9 @@ import React from 'react'
 import Testimonials from '../components/Testimonials/Testimonials'
 import Header from '../components/Header/Header'
 import Head from 'next/head'
+import { Props } from '../components/Testimonials/Testimonials.types'
 
-
-export const TestimonialsPage = ({testimonials, mentees}) => {
+export const TestimonialsPage: React.FC<Props> = ({testimonials, mentees}) => {
     return <>
         <Head>
             <title>Kapeesh.dev | Testimonials</title>
@@ -16,7 +16,7 @@ export const TestimonialsPage = ({testimonials, mentees}) => {
         <Header title={'TestimonialsMentorshipTestimonialsMentorship'} pageTitle={'Testimonials'} subtitle={'Learning Together'}/>
         <Testimonials testimonials={ testimonials }/>
 
-        <Header title={'MenteesMenteesMenteesMenteesMentees'} pageTitle={'Mentees'} subtitle={''}/>
+        <Header title={'MenteesMenteesMenteesMenteesMentees'} pageTitle={'Mentees'}/>
         <Testimonials testimonials={ mentees }/>
     </>
 }
