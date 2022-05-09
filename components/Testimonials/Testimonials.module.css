@@ -1,6 +1,27 @@
+.testimonialsWrapper > div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonialsWrapper > div:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+.testimonialsWrapper > div:nth-child(even) picture {
+    margin-right: 0 !important;
+    margin-left: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonialsWrapper > div:nth-child(even) picture {
+        margin-left: 0;
+    }
+}
+
 .picture::after {
     content: "";
-    background: linear-gradient(theme('colors.purple'),theme('colors.orange'));
+    background: linear-gradient(theme('colors.purple'), theme('colors.orange'));
     right: 15px;
     top: 0;
     width: 100%;

@@ -29,6 +29,7 @@
     top: 30px;
     position: fixed;
     overflow: hidden;
+    display: none;
 }
 .nav .line {
     width: 60%;

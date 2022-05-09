@@ -1,5 +1,5 @@
 export interface Props {
-    title?: string,
-    pageTitle?: string,
-    subtitle?: string
+  title?: string;
+  pageTitle?: string;
+  subtitle?: string;
 }

@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb-typescript-prettier"
+  ],
+  "rules": {
+    // needed from CMS
+    "jsx-a11y/img-redundant-alt": "off",
+    "@next/next/no-img-element": "off",
+    // needed for next Link
+    "jsx-a11y/anchor-is-valid": "off",
+    // for custom nav
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    // next app.tsx
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }
