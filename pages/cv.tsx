@@ -7,11 +7,8 @@ export default function CvPage(): React.ReactNode {
   return (
     <>
       <Head>
-        <title>Kapeesh.dev | Testimonials</title>
-        <meta
-          name="description"
-          content="What my colleagues and mentees have shared"
-        />
+        <title>Kapeesh.dev | CV</title>
+        <meta name="description" content="Download my CV" />
       </Head>
 
       <Header

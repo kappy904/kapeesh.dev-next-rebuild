@@ -507,3 +507,7 @@ strong {
         transform: scale(1);
     }
 }
+.ball {
+    width: 100px;
+    height: 100px;
+}
