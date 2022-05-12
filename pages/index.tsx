@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Kapeesh.dev</title>
+        <meta name="description" content="Welcome to my portfolio site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container ml-auto mr-auto mb-10">

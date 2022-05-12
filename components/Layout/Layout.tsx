@@ -8,9 +8,9 @@ export default function Layout({
   children,
 }: PropsWithChildren<Props>): JSX.Element {
   return (
-    <div>
+    <main>
       <Navigation />
       {children}
-    </div>
+    </main>
   );
 }
