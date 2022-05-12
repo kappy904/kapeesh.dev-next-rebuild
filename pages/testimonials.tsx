@@ -1,9 +1,9 @@
-import * as contentful from "contentful";
 import React from "react";
 import Head from "next/head";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Header from "../components/Header/Header";
 import { Props } from "../components/Testimonials/Testimonials.types";
+import { client } from "../utils/utils";
 
 export default function TestimonialsPage({
   testimonials,
@@ -33,11 +33,6 @@ export default function TestimonialsPage({
 }
 
 export async function getStaticProps() {
-  const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  });
-
   const testimonials = await client
     .getEntries({ content_type: "testimonial" })
     .then((response) => response.items);
@@ -45,6 +40,7 @@ export async function getStaticProps() {
   const mentees = await client
     .getEntries({ content_type: "mentees" })
     .then((response) => response.items);
+
   return {
     props: {
       testimonials,

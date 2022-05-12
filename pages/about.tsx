@@ -1,21 +1,27 @@
-import * as contentful from "contentful";
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header/Header";
 import Youtube from "../components/Youtube/Youtube";
-import { IYoutube } from "../components/Youtube/Youtube.types";
+import HobbiesCollection from "../components/Hobbies/HobbiesCollection";
+import { query } from "../components/Hobbies/Hobbies.types";
+import useContentful from "../hooks/useContentful";
+import HobbySingle from "../components/Hobbies/HobbySingle";
+import ErrorMessage from "../components/ErrorMessage/ErrorMessage";
 
-export interface Props {
-  youtube: IYoutube;
-}
+export default function AboutPage(): JSX.Element {
+  const { data, errors } = useContentful(query);
+  if (errors) {
+    return <ErrorMessage error={errors} />;
+  }
 
-export default function AboutPage({ youtube }: Props): JSX.Element {
+  if (!data) {
+    return null;
+  }
   return (
     <>
       <Head>
         <title>Kapeesh.dev | About</title>
       </Head>
-
       <Header
         title="AboutAboutAboutAbout"
         pageTitle="About Me"
@@ -23,25 +29,16 @@ export default function AboutPage({ youtube }: Props): JSX.Element {
       />
 
       <Youtube
-        title={youtube?.title}
-        description={youtube?.description}
-        videoUrl={youtube.videoUrl}
+        title={data?.youtube?.title}
+        description={data?.youtube?.description}
+        videoUrl={data?.youtube?.videoUrl}
       />
 
+      <HobbySingle hobbies={data?.hobbies} />
+
       <Header title="HobbiesHobbiesHobbiesHobbies" pageTitle="Hobbies" />
+
+      <HobbiesCollection hobbiesCollection={data?.hobbiesCollection} />
     </>
   );
-}
-
-export async function getStaticProps() {
-  const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  });
-  const youtube = await client.getEntry("1JUUaaj9pvoL1ECguycNsX");
-  return {
-    props: {
-      youtube: youtube.fields,
-    },
-  };
 }
