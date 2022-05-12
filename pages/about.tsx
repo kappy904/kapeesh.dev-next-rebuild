@@ -3,13 +3,14 @@ import Head from "next/head";
 import Header from "../components/Header/Header";
 import Youtube from "../components/Youtube/Youtube";
 import HobbiesCollection from "../components/Hobbies/HobbiesCollection";
-import { query } from "../components/Hobbies/Hobbies.types";
 import useContentful from "../hooks/useContentful";
 import HobbySingle from "../components/Hobbies/HobbySingle";
 import ErrorMessage from "../components/ErrorMessage/ErrorMessage";
+import { query } from "../graphql/about.query";
 
 export default function AboutPage(): JSX.Element {
   const { data, errors } = useContentful(query);
+
   if (errors) {
     return <ErrorMessage error={errors} />;
   }
@@ -17,28 +18,31 @@ export default function AboutPage(): JSX.Element {
   if (!data) {
     return null;
   }
+
+  const { youtube, hobby, hobbies } = data;
+
   return (
     <>
       <Head>
         <title>Kapeesh.dev | About</title>
+        <meta name="description" content="Get to know me better!" />
       </Head>
       <Header
         title="AboutAboutAboutAbout"
         pageTitle="About Me"
         subtitle="Learning by living"
       />
-
       <Youtube
-        title={data?.youtube?.title}
-        description={data?.youtube?.description}
-        videoUrl={data?.youtube?.videoUrl}
+        title={youtube?.title}
+        description={youtube?.description}
+        videoUrl={youtube?.videoUrl}
       />
 
-      <HobbySingle hobbies={data?.hobbies} />
+      <HobbySingle hobbies={hobby} />
 
       <Header title="HobbiesHobbiesHobbiesHobbies" pageTitle="Hobbies" />
 
-      <HobbiesCollection hobbiesCollection={data?.hobbiesCollection} />
+      <HobbiesCollection hobbiesCollection={hobbies.items} />
     </>
   );
 }

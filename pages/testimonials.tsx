@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { GetStaticProps } from "next";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Header from "../components/Header/Header";
 import { Props } from "../components/Testimonials/Testimonials.types";
@@ -31,8 +32,7 @@ export default function TestimonialsPage({
     </>
   );
 }
-
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const testimonials = await client
     .getEntries({ content_type: "testimonial" })
     .then((response) => response.items);
@@ -47,4 +47,4 @@ export async function getStaticProps() {
       mentees,
     },
   };
-}
+};

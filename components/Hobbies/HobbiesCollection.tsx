@@ -11,7 +11,7 @@ export default function HobbiesCollection({
 }: Props): JSX.Element {
   return (
     <div className={`${styles.hobbiesWrapper}`}>
-      {hobbiesCollection?.items.map((hobby) => (
+      {hobbiesCollection?.map((hobby) => (
         <div
           key={hobby?.title}
           className="flex container mx-auto flex-col-reverse md:flex-row  justify-center items-center -mt-10"
@@ -25,9 +25,9 @@ export default function HobbiesCollection({
             </p>
             <a
               className="font-extrabold font-primary mb-2 text-blue"
-              href={hobby?.lInk?.json?.content[0].content?.[1].data.uri}
+              href={hobby?.link?.json?.content[0].content?.[1].data.uri}
             >
-              {hobby?.lInk?.json?.content[0].content[1].content?.[0].value}
+              {hobby?.link?.json?.content[0].content[1].content?.[0].value}
             </a>
           </div>
           <div

@@ -14,9 +14,9 @@ export default function HobbySingle({ hobbies }: PropsSingle) {
         </p>
         <a
           className="font-extrabold font-primary mb-2 text-blue"
-          href={hobbies?.lInk?.json?.content[0].content?.[1].data.uri}
+          href={hobbies?.link?.json?.content[0].content?.[1].data.uri}
         >
-          {hobbies?.lInk?.json?.content[0].content[1].content?.[0].value}
+          {hobbies?.link?.json?.content[0].content[1].content?.[0].value}
         </a>
       </div>
       <div

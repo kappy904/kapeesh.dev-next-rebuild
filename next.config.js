@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['https://images.ctfassets.net']
+    domains: ["https://images.ctfassets.net"],
   },
+  optimizeFonts: true,
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

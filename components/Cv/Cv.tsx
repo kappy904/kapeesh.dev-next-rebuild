@@ -3,7 +3,7 @@ import styles from "./Cv.module.css";
 
 export default function Cv() {
   return (
-    <div className="flex container content-center flex flex-col md:flex-row justify-evenly m-auto">
+    <div className="flex container content-center flex flex-col md:flex-row justify-evenly">
       <div
         className={`${styles.gradient} flex text-center pl-3 mx-auto md:pl-0 justify-center items-center rounded-full block`}
       >
