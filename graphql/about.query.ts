@@ -23,13 +23,18 @@ fragment hobbyFields on Hobbies {
   }
   imagesCollection {
     items {
+      fileName
       url
+      sys {
+        id
+      }
     }
   }
   blurb {
     json
   }
 }
+
 `;
 
 export default query;

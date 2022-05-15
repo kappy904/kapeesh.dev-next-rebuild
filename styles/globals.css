@@ -511,3 +511,8 @@ strong {
     width: 100px;
     height: 100px;
 }
+
+li {
+    list-style: disc;
+}
+

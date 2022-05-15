@@ -1,0 +1,51 @@
+.playButton {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+}
+
+.videoPlayer {
+    height: 100%;
+    transform: scale(1.01);
+}
+
+.circleLarge {
+    width: 423px;
+    height: 423px;
+}
+
+.roundedFull {
+    border-radius: 9999px;
+}
+
+@media screen and (max-width: 640px) {
+    .circleLarge {
+        width: 223px;
+        height: 223px;
+    }
+}
+
+.circleSmall {
+    width: 123px;
+    height: 123px;
+}
+
+
+
+.portfolioWrapper > div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolioWrapper > div:nth-child(even), .portfolioWrapper > div:nth-child(odd) {
+        flex-direction: column !important;
+    }
+}
+
