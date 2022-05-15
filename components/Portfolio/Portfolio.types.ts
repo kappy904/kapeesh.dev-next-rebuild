@@ -10,7 +10,12 @@ export interface Portfolio {
   portfolios: Portfolio;
   map(element: (portfolios) => JSX.Element): string;
 }
-//
+
+export interface Clientlogo {
+  clientLogos: object;
+}
+
+// If required
 // const query = `
 // {
 //  portfolioCollection {
