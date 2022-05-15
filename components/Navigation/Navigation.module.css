@@ -7,11 +7,6 @@
 .fullScreen {
     height: 100% !important;
 }
-@media screen and (max-width: 768px) {
-    .logo {
-        display: none;
-    }
-}
 .logo i {
     font-style: normal;
     width: 46px;
