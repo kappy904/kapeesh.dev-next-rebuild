@@ -1,9 +1,14 @@
-import ReactMarkdown from "react-markdown";
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 import styles from "./Testimonials.module.css";
 import { Props } from "./Testimonials.types";
 
 export default function Testimonials({ testimonials }: Props): JSX.Element {
+  const contentfulLoader = ({ src }) => {
+    return `https:${src}`;
+  };
+
   return (
     <div
       className={`${styles.testimonialsWrapper} container mx-auto px-4 py-4 md:py-10`}
@@ -17,10 +22,14 @@ export default function Testimonials({ testimonials }: Props): JSX.Element {
             className={`${styles.picture} flex-shrink-0 relative block w-2/5 md:w-1/4 relative my-3 md:mr-20 md:w-1/6 pointer-events-none select-none`}
           >
             {testimonial.fields.image?.fields.file.url.length > 0 && (
-              <img
-                src={testimonial?.fields.image?.fields.file.url}
+              <Image
+                loader={contentfulLoader}
+                src={`${testimonial?.fields.image?.fields.file.url}`}
                 className="rounded-full"
                 alt={testimonial?.fields.image?.fields.title}
+                width={250}
+                height={250}
+                priority
               />
             )}
           </picture>

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ClientLogos.module.css";
 import { Clientlogo } from "../Portfolio/Portfolio.types";
 

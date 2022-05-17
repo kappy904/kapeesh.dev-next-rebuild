@@ -1,4 +1,3 @@
-import React from "react";
 import { IYoutube } from "./Youtube.types";
 
 export default function Youtube({

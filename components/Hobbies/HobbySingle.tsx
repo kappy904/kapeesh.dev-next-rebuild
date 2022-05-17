@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Hobbies.module.css";
 import { PropsSingle } from "./Hobbies.types";
 

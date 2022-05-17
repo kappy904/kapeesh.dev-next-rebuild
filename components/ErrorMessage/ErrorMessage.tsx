@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ErrorMessage({ error }): JSX.Element {
   return (
     <div className="flex h-screen">

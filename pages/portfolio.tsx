@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import Header from "../components/Header/Header";
@@ -53,5 +52,6 @@ export const getStaticProps: GetStaticProps = async () => {
       portfolios,
       clientLogos,
     },
+    revalidate: 3600,
   };
 };

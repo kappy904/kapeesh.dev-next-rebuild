@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import Testimonials from "../components/Testimonials/Testimonials";
@@ -46,5 +45,6 @@ export const getStaticProps: GetStaticProps = async () => {
       testimonials,
       mentees,
     },
+    revalidate: 3600,
   };
 };
