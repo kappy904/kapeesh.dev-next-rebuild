@@ -37,6 +37,7 @@ export default function HobbiesCollection({
               <Image
                 className="bg-purple block rounded-full relative object-cover"
                 src={hobby.imagesCollection?.items?.[2]?.url}
+                alt={hobby?.title}
                 height={210}
                 width={210}
               />
