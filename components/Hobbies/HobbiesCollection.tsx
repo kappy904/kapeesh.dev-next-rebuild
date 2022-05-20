@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Fade from "react-reveal/Fade";
 import styles from "./Hobbies.module.css";
 import { Hobby } from "./Hobbies.types";
 
@@ -33,33 +34,35 @@ export default function HobbiesCollection({
           <div
             className={`${styles.aboutCirclesB} flex-auto md:mx-8 relative about-circles-b max-w-3xl`}
           >
-            <picture>
-              <Image
-                className="bg-purple block rounded-full relative object-cover"
-                src={hobby.imagesCollection?.items?.[2]?.url}
-                alt={hobby?.title}
-                height={210}
-                width={210}
-              />
-            </picture>
-            <picture>
-              <img
-                className="bg-purple block rounded-full relative object-cover object-left-bottom"
-                alt={hobby?.title}
-                src={hobby.imagesCollection?.items?.[1]?.url}
-                height={320}
-                width={323}
-              />
-            </picture>
-            <picture>
-              <img
-                className="bg-purple block rounded-full relative object-cover"
-                alt={hobby?.title}
-                src={hobby.imagesCollection?.items?.[0]?.url}
-                height={289}
-                width={289}
-              />
-            </picture>
+            <Fade bottom>
+              <picture>
+                <Image
+                  className="bg-purple block rounded-full relative object-cover"
+                  src={hobby.imagesCollection?.items?.[2]?.url}
+                  alt={hobby?.title}
+                  height={210}
+                  width={210}
+                />
+              </picture>
+              <picture>
+                <img
+                  className="bg-purple block rounded-full relative object-cover object-left-bottom"
+                  alt={hobby?.title}
+                  src={hobby.imagesCollection?.items?.[1]?.url}
+                  height={320}
+                  width={323}
+                />
+              </picture>
+              <picture>
+                <img
+                  className="bg-purple block rounded-full relative object-cover"
+                  alt={hobby?.title}
+                  src={hobby.imagesCollection?.items?.[0]?.url}
+                  height={289}
+                  width={289}
+                />
+              </picture>
+            </Fade>
           </div>
         </div>
       ))}

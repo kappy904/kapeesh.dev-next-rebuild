@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Fade from "react-reveal/Fade";
 import Header from "../components/Header/Header";
 import Youtube from "../components/Youtube/Youtube";
 import HobbiesCollection from "../components/Hobbies/HobbiesCollection";
@@ -31,11 +32,13 @@ export default function AboutPage(): JSX.Element {
         pageTitle="About Me"
         subtitle="Learning by living"
       />
-      <Youtube
-        title={youtube?.title}
-        description={youtube?.description}
-        videoUrl={youtube?.videoUrl}
-      />
+      <Fade>
+        <Youtube
+          title={youtube?.title}
+          description={youtube?.description}
+          videoUrl={youtube?.videoUrl}
+        />
+      </Fade>
 
       <HobbySingle hobbies={hobby} />
 

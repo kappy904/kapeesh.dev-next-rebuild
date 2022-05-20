@@ -1,3 +1,4 @@
+import Fade from "react-reveal/Fade";
 import styles from "./Hobbies.module.css";
 import { PropsSingle } from "./Hobbies.types";
 
@@ -26,14 +27,16 @@ export default function HobbySingle({ hobbies }: PropsSingle): JSX.Element {
         className={`${styles.aboutCirclesB} flex-auto md:mx-8 relative about-circles-b max-w-3xl`}
       >
         {images?.map((image) => (
-          <picture key={image?.sys?.id}>
-            <source type="image/avif" srcSet={image?.url} />
-            <img
-              className="bg-purple block rounded-full relative object-cover"
-              src={image?.url}
-              alt={image?.fileName}
-            />
-          </picture>
+          <Fade bottom>
+            <picture key={image?.sys?.id}>
+              <source type="image/avif" srcSet={image?.url} />
+              <img
+                className="bg-purple block rounded-full relative object-cover"
+                src={image?.url}
+                alt={image?.fileName}
+              />
+            </picture>
+          </Fade>
         ))}
       </div>
     </div>

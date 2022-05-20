@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Fade from "react-reveal/Fade";
 import styles from "./Portfolio.module.css";
 import { Portfolio } from "./Portfolio.types";
 
@@ -17,36 +18,38 @@ export default function PortfolioCollection({
           key={portfolio.sys.id}
           className="flex container mx-auto justify-center items-center mb-20 md:mb-32"
         >
-          <div className="flex-auto mx-8">
-            {portfolio?.fields.video && (
-              <i
-                className={`${styles.circleLarge} bg-purple relative overflow-hidden block bg-cover mx-auto mb-4 md:mb-2`}
-              >
-                {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-                <video
-                  width="100%"
-                  controls
-                  height="100%"
-                  className={`${styles.videoPlayer} absolute  object-cover`}
-                  loop
-                  poster={portfolio.fields.videoCover.fields.file.url}
+          <Fade bottom>
+            <div className="flex-auto mx-8">
+              {portfolio?.fields.video && (
+                <i
+                  className={`${styles.circleLarge} bg-purple relative overflow-hidden block bg-cover mx-auto mb-4 md:mb-2`}
                 >
-                  <source
-                    src={portfolio.fields.video.fields.file.url}
-                    type="video/mp4"
-                  />
-                </video>
-              </i>
-            )}
-            {!portfolio?.fields.video && (
-              <i
-                className={`${styles.circleLarge} bg-center bg-purple relative overflow-hidden rounded-full block bg-cover mx-auto mb-4 md:mb-2`}
-                style={{
-                  backgroundImage: `url(${portfolio?.fields.media?.[0].fields.file.url})`,
-                }}
-              />
-            )}
-          </div>
+                  {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+                  <video
+                    width="100%"
+                    controls
+                    height="100%"
+                    className={`${styles.videoPlayer} absolute  object-cover`}
+                    loop
+                    poster={portfolio.fields.videoCover.fields.file.url}
+                  >
+                    <source
+                      src={portfolio.fields.video.fields.file.url}
+                      type="video/mp4"
+                    />
+                  </video>
+                </i>
+              )}
+              {!portfolio?.fields.video && (
+                <i
+                  className={`${styles.circleLarge} bg-center bg-purple relative overflow-hidden rounded-full block bg-cover mx-auto mb-4 md:mb-2`}
+                  style={{
+                    backgroundImage: `url(${portfolio?.fields.media?.[0].fields.file.url})`,
+                  }}
+                />
+              )}
+            </div>
+          </Fade>
           <div className="px-3">
             <h2 className="font-secondary tracking-tighter leading-5 md:text-3xl text-2xl leading-none mb-4 font-extrabold text-blue md:leading-8">
               {portfolio?.fields.title}
