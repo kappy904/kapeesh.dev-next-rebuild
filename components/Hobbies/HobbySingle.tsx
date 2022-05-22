@@ -26,8 +26,8 @@ export default function HobbySingle({ hobbies }: PropsSingle): JSX.Element {
       <div
         className={`${styles.aboutCirclesB} flex-auto md:mx-8 relative about-circles-b max-w-3xl`}
       >
-        {images?.map((image) => (
-          <Fade bottom>
+        <Fade bottom>
+          {images?.map((image) => (
             <picture key={image?.sys?.id}>
               <source type="image/avif" srcSet={image?.url} />
               <img
@@ -36,8 +36,8 @@ export default function HobbySingle({ hobbies }: PropsSingle): JSX.Element {
                 alt={image?.fileName}
               />
             </picture>
-          </Fade>
-        ))}
+          ))}
+        </Fade>
       </div>
     </div>
   );

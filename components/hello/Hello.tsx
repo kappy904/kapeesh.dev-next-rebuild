@@ -10,13 +10,13 @@ export default function Hello(): JSX.Element {
       <Link href="/home">
         <div className="cursor-pointer modal-container fixed w-full h-full z-50  overflow-hidden flex justify-center items-center">
           <Header title="ElzanneBrettBeccaTimFreyElzanneBrettBeccaTimFreyElzanneBrettBeccaTimFreyElzanneBrettBeccaTimFrey" />
-          <div className="flex justify-center items-center relative">
+          <div className="flex justify-center items-center relative md:flex-row flex-col-reverse">
             <div className={styles.logoWrapper}>
               <i className={`${styles.strip} ${styles.stripOrange}`} />
               <i className={`${styles.strip} ${styles.stripPurple}`} />
               <i className={`${styles.strip} ${styles.stripBlue}`} />
             </div>
-            <h4 className={`${styles.heading}  bold text-2xl`}>
+            <h4 className={`${styles.heading} bold text-2xl md:mb-0 mb-8`}>
               <span>👋</span> hello sourcegraph
             </h4>
             <br />
