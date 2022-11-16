@@ -50,7 +50,7 @@ export default function Cv() {
             <div className="flex flex-col md:mr-24">
               <div className="flex flex-row items-center mb-10">
                 <i
-                  className={`${styles.ball} bg-orange mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
+                  className={`${styles.ball} bg-green mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function Cv() {
               </div>
               <div className="flex flex-row items-center mb-10">
                 <i
-                  className={`${styles.ball} bg-orange mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
+                  className={`${styles.ball} bg-green mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export default function Cv() {
               </div>
               <div className="flex flex-row items-center mb-10">
                 <i
-                  className={`${styles.ball} bg-orange mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
+                  className={`${styles.ball} bg-green mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function Cv() {
             <div className="flex flex-col">
               <div className="flex flex-row items-center mb-10">
                 <i
-                  className={`${styles.ball} bg-orange mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
+                  className={`${styles.ball} bg-green mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ export default function Cv() {
               </div>
               <div className="flex flex-row items-center mb-10">
                 <i
-                  className={`${styles.ball} bg-orange mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
+                  className={`${styles.ball} bg-green mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

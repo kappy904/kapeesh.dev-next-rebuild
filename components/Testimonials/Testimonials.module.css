@@ -21,7 +21,7 @@
 
 .picture::after {
     content: "";
-    background: linear-gradient(theme('colors.purple'), theme('colors.orange'));
+    background: linear-gradient(theme('colors.purple'), theme('colors.green'));
     right: 15px;
     top: 0;
     width: 100%;
