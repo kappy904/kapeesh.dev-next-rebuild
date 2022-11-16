@@ -8,7 +8,7 @@ export default function ClientLogos({ clientLogos }: Clientlogo): JSX.Element {
       className={`${styles.clientWrapper} relative flex flex-wrap justify-center w-16 h-16 rounded-full p-2 relative bg-cover-wrapper mb-4`}
     >
       {clientLogos?.[0].fields?.list.map((logo) => (
-        <>
+        <div key={logo.metadata?.tags[0]?.sys.id}>
           {logo.metadata?.tags[0]?.sys.id === "clientSmall" && (
             <Zoom>
               <div
@@ -33,7 +33,7 @@ export default function ClientLogos({ clientLogos }: Clientlogo): JSX.Element {
               />
             </Zoom>
           )}
-        </>
+        </div>
       ))}
     </div>
   );

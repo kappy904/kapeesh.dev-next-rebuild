@@ -1,3 +1,6 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
+/** @type {import('tailwindcss').Config} \*/
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -11,8 +14,8 @@ module.exports = {
         blue: '#15009E',
       },
       fontFamily: {
-        display: ["Cinzel Decorative", "sans-serif"],
-        body: ["Petrona", "sans-serif"],
+        primary: ['var(--font-merriweatherSans)', ...fontFamily.serif],
+        secondary: ['var(--font-petrona)', ...fontFamily.sans],
       },
     },
   },
