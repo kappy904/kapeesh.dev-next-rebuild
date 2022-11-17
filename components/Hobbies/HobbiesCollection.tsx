@@ -42,7 +42,10 @@ export default function HobbiesCollection({
                   alt={hobby?.title}
                   height={210}
                   width={210}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </picture>
               <picture>
                 <img

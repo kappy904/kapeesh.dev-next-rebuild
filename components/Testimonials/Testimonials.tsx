@@ -32,7 +32,10 @@ export default function Testimonials({ testimonials }: Props): JSX.Element {
                   width={250}
                   height={250}
                   priority
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               )}
             </picture>
             <div>
