@@ -6,15 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: "#5a1f9f",
-        orange: "#f96316",
-        blue: "#00b4f2",
+        purple: '#5a1f9f',
+        green: '#008521',
+        blue: '#15009E',
       },
       fontFamily: {
-        display: ["Cinzel Decorative", "sans-serif"],
-        body: ["Petrona", "sans-serif"],
-      },
+        display: ['Merriweather Sans', 'sans-serif'],
+        body: ['Petrona', 'sans-serif'],
+      }
     },
   },
   plugins: [],
-};
+}

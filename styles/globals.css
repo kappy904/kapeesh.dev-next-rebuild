@@ -8,31 +8,25 @@ body {
     margin: 0;
     padding: 0;
     color: #6b6b6b;
-    background:  url("/images/home/bg-new.png"), linear-gradient(#00b4f26e, #fff) fixed;
+    background: url("/images/home/bg-new.png"), linear-gradient(#f6ffd1, #e1ffcb) fixed;
 }
-
 @media screen and (max-width: 1024px) {
     body {
         background-size: contain;
     }
 }
-
 * {
     box-sizing: border-box;
 }
-
 *::before, *::after {
     box-sizing: border-box;
 }
-
 .font-primary {
     font-family: 'Merriweather Sans', sans-serif;
 }
-
 .font-secondary {
     font-family: 'Petrona', serif;
 }
-
 @font-face {
     font-family: 'icomoon';
     src: url('/fonts/icomoon.woff?3yvz2y') format('woff');
@@ -40,7 +34,6 @@ body {
     font-style: normal;
     font-display: block;
 }
-
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -54,56 +47,44 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-bullhorn:before {
     content: "\e91a";
 }
-
 .icon-terminal:before {
     content: "\ea81";
 }
-
 .icon-mail4:before {
     content: "\ea86";
 }
-
 .icon-instagram:before {
     content: "\ea92";
 }
-
 .icon-steam2:before {
     content: "\eaad";
 }
-
 .icon-github:before {
     content: "\eab0";
 }
-
 .icon-soundcloud:before {
     content: "\eac3";
 }
-
 .icon-reddit:before {
     content: "\eac6";
 }
-
 .icon-linkedin:before {
     content: "\eac9";
 }
-
 .icon-stackoverflow:before {
     content: "\ead0";
 }
-
 .text-white {
-    color: #ffffff;
+    color: #fcffd1;
 }
-
 a {
-    color: theme('colors.purple');
+    color: #940094;
     -webkit-text-decoration-color: #6b6b6b;
     text-decoration-color: #6b6b6b;
-    background: linear-gradient(130deg, theme('colors.purple') 30%, theme('colors.blue'));
+    background: linear-gradient(130deg, #940094 30%, #15009e);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,53 +94,45 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
 a:hover {
     background-position: 0 100%;
 }
-
 strong {
     font-weight: 900;
 }
-
 .container {
     position: relative;
     z-index: 1;
 }
-
 @media screen and (max-width: 768px) {
     iframe {
         width: 100%;
     }
 }
-
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(#00b4f26e, #fff);
+    background-color: #fcffd1;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
-    background: linear-gradient(#00b4f26e, #fff);
+    background-color: #fcffd1;
 }
-
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(#00b4f26e, #fff);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.6, theme('colors.orange')));
+    background-color: #fcffd1;
+    background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#940094), to(#15009e), color-stop(0.6, #940094));
 }
 
 /*home*/
 .circle {
-    border: 3px solid theme('colors.blue');
+    border: 3px solid #15009e;
     margin: 0;
     padding: 0;
     outline: 0;
     flex: none;
     opacity: 0;
 }
-
 .circle svg {
     transform-origin: center center;
     transition: transform 0.2s linear;
@@ -174,37 +147,31 @@ strong {
         margin: 4em 12px 0 0;
     }
 }
-
 @media screen and (max-width: 768px) {
     .circle {
         margin: 0;
     }
 }
-
 .circle:hover {
-    border: 3px solid theme('colors.purple');
+    border: 3px solid #940094;
     transition: 0.2s linear all;
-    background: linear-gradient(70deg, theme('colors.blue') 35%, theme('colors.blue') 20%, theme('colors.purple'));
+    background: linear-gradient(70deg, #15009e 35%, #15009e 20%, #940094);
 }
-
 .circle:hover svg {
     transform: scale(1.1);
 }
-
 .circle:hover svg path {
-    fill: #ffffff;
+    fill: #fcffd1;
 }
-
 .circle:hover h2 {
-    color: #ffffff;
+    color: #fcffd1;
 }
-
 .circle:hover h5 {
-    color: theme('colors.purple');
+    color: #940094;
 }
-
 .circle-a {
-    background: theme('colors.blue');
+    border: 3px solid transparent;
+    background: linear-gradient(130deg, #940094 10%, #15009e 50%, #15009e);
     width: 431px;
     height: 431px;
     transition: 0.2s linear all;
@@ -213,39 +180,32 @@ strong {
     animation-delay: 200ms;
     animation-fill-mode: forwards;
 }
-
 @media screen and (max-width: 1023px) {
     .circle-a {
         width: 321px;
         height: 321px;
         margin: 2em auto 0;
     }
-
     .circle-a svg {
         margin-top: -2em;
         width: 120px;
     }
-
     .circle-a::before {
         display: none;
     }
 }
-
 .circle-a:hover {
     transition: 0.2s linear all;
-    border-color: theme('colors.blue') !important;
+    border-color: #15009e !important;
     background: transparent !important;
 }
-
 .circle-a:hover svg path {
     fill: url(#portfolio-a);
 }
-
 .circle-a:hover h2 {
     transition: 0.2s linear all;
-    color: theme('colors.blue');
+    color: #15009e;
 }
-
 .circle-a::before {
     opacity: 1 !important;
     content: "";
@@ -264,7 +224,7 @@ strong {
 .circle-a::after {
     content: "";
     position: absolute;
-    background: theme('colors.blue');
+    background: #15009e;
     height: 3px;
     transform: rotate(-145deg);
     transform-origin: center center;
@@ -272,7 +232,6 @@ strong {
     left: auto;
     top: auto;
 }
-
 @media screen and (min-width: 1024px) {
     .circle-a::after {
         width: 60px;
@@ -280,7 +239,6 @@ strong {
         bottom: 33px;
     }
 }
-
 @media screen and (min-width: 1280px) {
     .circle-a::after {
         width: 105px;
@@ -288,7 +246,6 @@ strong {
         bottom: 33px;
     }
 }
-
 .circle-b {
     width: 320px;
     height: 320px;
@@ -298,7 +255,6 @@ strong {
     animation-delay: 400ms;
     animation-fill-mode: forwards;
 }
-
 @media screen and (max-width: 768px) {
     .circle-b {
         width: 221px;
@@ -306,12 +262,10 @@ strong {
         margin-left: auto;
         margin-right: 10px;
     }
-
     .circle-b svg {
         width: 120px;
     }
 }
-
 .circle-b::after {
     left: auto;
     width: 139px;
@@ -319,7 +273,6 @@ strong {
     bottom: 30px;
     transform: rotate(35deg);
 }
-
 @media screen and (min-width: 1024px) {
     .circle-b::after {
         left: auto;
@@ -329,7 +282,6 @@ strong {
         transform: rotate(35deg);
     }
 }
-
 @media screen and (min-width: 1280px) {
     .circle-b::after {
         left: auto;
@@ -339,7 +291,6 @@ strong {
         transform: rotate(35deg);
     }
 }
-
 .circle-c {
     width: 250px;
     height: 250px;
@@ -349,7 +300,6 @@ strong {
     animation-delay: 600ms;
     animation-fill-mode: forwards;
 }
-
 @media screen and (max-width: 768px) {
     .circle-c {
         width: 221px;
@@ -358,20 +308,16 @@ strong {
         margin-top: -1.5em;
         margin-left: 10px;
     }
-
     .circle-c svg {
         width: 120px;
     }
 }
-
 .circle-c:hover::before {
     transform: scale(1) rotate(-13deg);
 }
-
 .circle-c::after {
     transform: rotate(-45deg);
 }
-
 @media screen and (min-width: 1024px) {
     .circle-c::after {
         width: 90px;
@@ -380,7 +326,6 @@ strong {
         top: 0;
     }
 }
-
 @media screen and (min-width: 1280px) {
     .circle-c::after {
         width: 93px;
@@ -389,7 +334,6 @@ strong {
         top: -14px;
     }
 }
-
 .circle-d {
     width: 360px;
     height: 360px;
@@ -399,7 +343,6 @@ strong {
     animation-delay: 800ms;
     animation-fill-mode: forwards;
 }
-
 @media screen and (max-width: 768px) {
     .circle-d {
         width: 221px;
@@ -408,18 +351,15 @@ strong {
         margin-top: -1.5em;
         margin-right: 10px;
     }
-
     .circle-d svg {
         width: 120px;
     }
 }
-
 .circle-d::after {
     transform: rotate(-215deg);
     left: auto;
     top: auto;
 }
-
 @media screen and (min-width: 1024px) {
     .circle-d::after {
         width: 70px;
@@ -428,7 +368,6 @@ strong {
         top: 110px;
     }
 }
-
 @media screen and (min-width: 1280px) {
     .circle-d::after {
         width: 174px;
@@ -436,7 +375,6 @@ strong {
         bottom: 33px;
     }
 }
-
 .circle-e {
     width: 260px;
     height: 260px;
@@ -446,7 +384,6 @@ strong {
     animation-delay: 1000ms;
     animation-fill-mode: forwards;
 }
-
 @media screen and (max-width: 768px) {
     .circle-e {
         width: 221px;
@@ -455,16 +392,13 @@ strong {
         margin-top: -1.5em;
         margin-left: 10px;
     }
-
     .circle-e svg {
         width: 120px;
     }
 }
-
 .text-6xl {
     font-size: 5rem;
 }
-
 @keyframes rotateIn {
     0% {
         opacity: 0;
@@ -475,7 +409,6 @@ strong {
         transform: rotate(195deg);
     }
 }
-
 @keyframes rotate {
     0% {
         transform: rotate(195deg);
@@ -484,7 +417,6 @@ strong {
         transform: rotate(1195deg);
     }
 }
-
 @keyframes fade-slow {
     0% {
         opacity: 0;
@@ -493,7 +425,6 @@ strong {
         opacity: 1;
     }
 }
-
 @keyframes fade-in-custom {
     0% {
         transform: scale(0.5);
