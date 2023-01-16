@@ -8,7 +8,7 @@ export default function Header({
 }: Props): JSX.Element {
   return (
     <div
-      className={`${styles.animatedHeader} animated-header relative overflow-hidden mb-6 md:mb-10`}
+      className={`${styles.animatedHeader} relative overflow-hidden mb-6 md:mb-10`}
     >
       <h1 className="font-primary pointer-events-none select-none font-bold">
         {title}

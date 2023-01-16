@@ -7,7 +7,7 @@ export default function Navigation(): JSX.Element {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <Link href="/home">
+      <Link href="/">
         <div
           className={`${styles.logo} fixed font-secondary flex items-center pt-6 pl-4 cursor-pointer z-10 outline-none`}
         >
@@ -56,7 +56,7 @@ export default function Navigation(): JSX.Element {
           <h2 className="font-secondary font-bold text-6xl text-center mb-24 leading-10 hidden md:block">
             <strong>Kapeesh</strong>
           </h2>
-          <Link href="/home">
+          <Link href="/">
             <a
               role="button"
               tabIndex={0}

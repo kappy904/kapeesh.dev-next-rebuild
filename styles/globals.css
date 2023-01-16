@@ -515,25 +515,3 @@ strong {
 li {
     list-style: disc;
 }
-.modal-overlay {
-    background:  url("/images/home/bg-new.png") #fff fixed;
-}
-
-.modal .animated-header {
-    position: absolute;
-    animation: blurCustom 35s infinite alternate-reverse ease-in-out;
-}
-
-@keyframes blurCustom {
-    0% {
-        filter: blur(15px);
-        transform: translate(-1840px, 0);
-    }
-    50% {
-        filter: blur(8px);
-    }
-    100% {
-        filter: blur(15px);
-        transform: translate(0, 0);
-    }
-}
