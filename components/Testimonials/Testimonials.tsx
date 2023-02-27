@@ -14,8 +14,8 @@ export default function Testimonials({ testimonials }: Props): JSX.Element {
     <div
       className={`${styles.testimonialsWrapper} container mx-auto px-4 py-4 md:py-10`}
     >
-      {testimonials.map((testimonial) => (
-        <Fade>
+      <Fade>
+        {testimonials.map((testimonial) => (
           <div
             key={testimonial?.sys.id}
             className="flex mb-10 md:mb-40 items-center flex-col md:flex-row"
@@ -50,8 +50,8 @@ export default function Testimonials({ testimonials }: Props): JSX.Element {
               </div>
             </div>
           </div>
-        </Fade>
-      ))}
+        ))}
+      </Fade>
     </div>
   );
 }

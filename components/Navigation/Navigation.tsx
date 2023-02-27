@@ -11,10 +11,10 @@ export default function Navigation(): JSX.Element {
         <div
           className={`${styles.logo} fixed font-secondary flex items-center pt-6 pl-4 cursor-pointer z-10 outline-none`}
         >
-          <i className="bg-orange text-4xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">
+          <i className="bg-purple text-4xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">
             K
           </i>
-          <span className="text-orange text-2xl tracking-tight">apeesh</span>
+          <span className="text-blue text-2xl tracking-tight">apeesh</span>
         </div>
       </Link>
       <nav

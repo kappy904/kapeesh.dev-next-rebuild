@@ -41,6 +41,7 @@
     opacity: 0;
     animation: letter-spacing 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);;
     animation-fill-mode: forwards;
+    color: #5a1f9f;
 }
 
 @media screen and (max-width: 640px) {
