@@ -18,18 +18,16 @@ export default function PortfolioPage({
   return (
     <>
       <Head>
-        <title>Kapeesh.dev | Testimonials</title>
-        <meta
-          name="description"
-          content="What my colleagues and mentees have shared"
-        />
+        <title>Kapeesh.dev | Portfolio</title>
+        <meta name="description" content="What I've learnt" />
       </Head>
 
       <Header
-        title="TestimonialsMentorshipTestimonialsMentorship"
-        pageTitle="Testimonials"
-        subtitle="Learning Together"
+        title="PortfolioPortfolioPortfolioPortfolioPortfolioPortfolio"
+        pageTitle="Portfolio"
+        subtitle="Learning by Doing"
       />
+
       <PortfolioCollection portfolioCollection={portfolios} />
 
       <Header title="ClientsClientsClientsClients" subtitle="Clients" />
