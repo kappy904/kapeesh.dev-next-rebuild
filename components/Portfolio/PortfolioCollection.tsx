@@ -63,11 +63,13 @@ export default function PortfolioCollection({
             <ul className="font-light font-primary leading-6 text-base tracking-wider list-disc pl-5 mb-6">
               <ReactMarkdown>{portfolio?.fields.learnings}</ReactMarkdown>
             </ul>
-            <p className="font-bold font-primary mb-2 text-blue">Awards</p>
             {portfolio?.fields.awards && (
-              <ul className="font-light font-primary leading-6 text-base tracking-wider  tracking-wider list-disc pl-5 mb-6">
-                <ReactMarkdown>{portfolio?.fields.awards}</ReactMarkdown>
-              </ul>
+              <>
+                <p className="font-bold font-primary mb-2 text-blue">Awards</p>
+                <ul className="font-light font-primary leading-6 text-base tracking-wider  tracking-wider list-disc pl-5 mb-6">
+                  <ReactMarkdown>{portfolio?.fields.awards}</ReactMarkdown>
+                </ul>
+              </>
             )}
             <a
               className="font-bold font-primary mb-2 text-blue"
