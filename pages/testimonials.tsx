@@ -19,14 +19,10 @@ export default function TestimonialsPage({
         />
       </Head>
 
-      <Header
-        title="TestimonialsMentorshipTestimonialsMentorship"
-        pageTitle="Testimonials"
-        subtitle="Learning Together"
-      />
+      <Header pageTitle="Testimonials" />
       <Testimonials testimonials={testimonials} />
 
-      <Header title="MenteesMenteesMenteesMenteesMentees" pageTitle="Mentees" />
+      <Header pageTitle="Mentee Testimonials" />
       <Testimonials testimonials={mentees} />
     </>
   );

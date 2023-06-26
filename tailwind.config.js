@@ -4,17 +4,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
-        purple: '#5a1f9f',
-        green: '#008521',
-        blue: '#15009E',
+        purple: "#0C091F",
+        green: "#2A5576",
+        blue: "#461D61",
       },
       fontFamily: {
-        display: ['Merriweather Sans', 'sans-serif'],
-        body: ['Petrona', 'sans-serif'],
-      }
+        display: ["Playfair Display", "sans-serif"],
+        body: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};

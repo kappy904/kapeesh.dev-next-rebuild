@@ -1,5 +1,6 @@
 .clientWrapper {
     width: 100%;
+    height: 100%;
 }
 
 .clientWrapper div {
@@ -11,57 +12,8 @@
     right: auto;
 }
 
-
-@media screen and (min-width: 768px) {
-    .clientWrapper div:nth-child(1) {
-        left: 110px;
-        top: 40px;
-    }
-
-    .clientWrapper div:nth-child(2) {
-        top: 200px;
-    }
-
-    .clientWrapper div:nth-child(4) {
-        top: 100px;
-        left: 20px;
-    }
-
-    .clientWrapper div:nth-child(5) {
-        top: 20px;
-        left: -30px;
-    }
-
-    .clientWrapper div:nth-child(6) {
-        top: 90px;
-        left: -20px;
-    }
-
-    .clientWrapper div:nth-child(7) {
-        top: 50px;
-        right: 13px;
-    }
-
-    .clientWrapper div:nth-child(8) {
-        top: -20px;
-    }
-
-    .clientWrapper div:nth-child(10) {
-        top: 140px;
-        left: -100px;
-    }
-
-    .clientWrapper div:nth-child(11) {
-        left: -92px;
-        top: 20px;
-    }
-
-    .clientWrapper div:nth-child(14) {
-        top: 65px;
-        right: 20px;
-    }
-
-    .clientWrapper div:nth-child(15) {
-        top: -50px;
+@media screen and (max-width :992px) {
+    .clientWrapper div {
+        margin: 5px
     }
 }

@@ -22,15 +22,11 @@ export default function PortfolioPage({
         <meta name="description" content="What I've learnt" />
       </Head>
 
-      <Header
-        title="PortfolioPortfolioPortfolioPortfolioPortfolioPortfolio"
-        pageTitle="Portfolio"
-        subtitle="Learning by Doing"
-      />
+      <Header pageTitle="Portfolio" />
 
       <PortfolioCollection portfolioCollection={portfolios} />
 
-      <Header title="ClientsClientsClientsClients" subtitle="Clients" />
+      <Header pageTitle="Clients" />
 
       <ClientLogos clientLogos={clientLogos} />
     </>

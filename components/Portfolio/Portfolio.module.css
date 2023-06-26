@@ -17,12 +17,8 @@
 }
 
 .circleLarge {
-    width: 423px;
-    height: 423px;
-}
-
-.roundedFull {
-    border-radius: 9999px;
+    width: 323px;
+    height: 323px;
 }
 
 @media screen and (max-width: 640px) {
@@ -36,16 +32,3 @@
     width: 123px;
     height: 123px;
 }
-
-
-
-.portfolioWrapper > div:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-@media screen and (max-width: 768px) {
-    .portfolioWrapper > div:nth-child(even), .portfolioWrapper > div:nth-child(odd) {
-        flex-direction: column !important;
-    }
-}
-

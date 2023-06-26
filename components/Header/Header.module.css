@@ -9,6 +9,7 @@
     letter-spacing: -22px;
     line-height: 280px;
     color: purple;
+    position: relative;
 }
 
 @media screen and (max-width: 640px) {

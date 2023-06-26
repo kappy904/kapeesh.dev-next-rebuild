@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
+import { useRouter } from "next/router";
 import styles from "./Navigation.module.css";
 
 export default function Navigation(): JSX.Element {
   const [isActive, setIsActive] = useState(false);
+  const router = useRouter();
   return (
     <>
       <Link href="/">
         <div
           className={`${styles.logo} fixed font-secondary flex items-center pt-6 pl-4 cursor-pointer z-10 outline-none`}
         >
-          <i className="bg-purple text-4xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">
+          <i className="bg-purple text-2xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">
             K
           </i>
           <span className="text-blue text-2xl tracking-tight">apeesh</span>
@@ -53,14 +55,16 @@ export default function Navigation(): JSX.Element {
           >
             Front End Developer
           </h5>
-          <h2 className="font-secondary font-bold text-6xl text-center mb-24 leading-10 hidden md:block">
+          <h2 className="font-secondary font-bold text-5xl text-center mb-24 leading-10 hidden md:block">
             <strong>Kapeesh</strong>
           </h2>
           <Link href="/">
             <a
               role="button"
               tabIndex={0}
-              className="text-3xl text-center mb-4"
+              className={`${
+                router.pathname === "/" ? "nav-active" : ""
+              } text-2xl text-center mb-4 font-primary`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -69,24 +73,13 @@ export default function Navigation(): JSX.Element {
               Home
             </a>
           </Link>
-          <Link href="/cv">
-            <a
-              role="button"
-              tabIndex={-1}
-              className="text-3xl text-center mb-4"
-              onClick={() => setIsActive(!isActive)}
-              onKeyDown={() => {
-                setIsActive(!isActive);
-              }}
-            >
-              Download CV
-            </a>
-          </Link>
           <Link href="/portfolio">
             <a
               role="button"
               tabIndex={-2}
-              className="text-3xl text-center mb-4"
+              className={`${
+                router.pathname === "/portfolio" ? "nav-active" : ""
+              } text-2xl text-center mb-4 font-primary`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -99,7 +92,9 @@ export default function Navigation(): JSX.Element {
             <a
               role="button"
               tabIndex={-3}
-              className="text-3xl text-center mb-4"
+              className={`${
+                router.pathname === "/testimonials" ? "nav-active" : ""
+              } text-2xl text-center mb-4 font-primary`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -108,24 +103,13 @@ export default function Navigation(): JSX.Element {
               Testimonials
             </a>
           </Link>
-          <Link href="/about">
-            <a
-              role="button"
-              tabIndex={-4}
-              className="text-3xl text-center mb-4"
-              onClick={() => setIsActive(!isActive)}
-              onKeyDown={() => {
-                setIsActive(!isActive);
-              }}
-            >
-              About
-            </a>
-          </Link>
           <Link href="/contact">
             <a
               role="button"
               tabIndex={-5}
-              className="text-3xl text-center mb-4"
+              className={`${
+                router.pathname === "/contact" ? "nav-active" : ""
+              } text-2xl text-center mb-4 font-primary`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
