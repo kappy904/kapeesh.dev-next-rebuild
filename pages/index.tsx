@@ -26,13 +26,12 @@ export default function Home() {
           <p>Currently working @ Passionate People </p>
           <p className="my-5">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            Hi there! I'm a Senior FrontEnd Engineer and JavaScript Developer
-            Consultant. I pride myself in creating performant software
-            solutions, leadership and knowledge sharing for Product, Software
-            and E-Commerce companies. My framework of choice is React as I
-            firmly believe in its methodologies, best practices and thriving
-            community. In our ever changing technological landscape I am always
-            learning.
+            I'm a Senior FrontEnd Engineer and JavaScript Developer Consultant.
+            I pride myself in creating performant software solutions, leadership
+            and knowledge sharing for Product, Software and E-Commerce
+            companies. My framework of choice is React as I firmly believe in
+            its methodologies, best practices and thriving community. In our
+            ever changing technological landscape I am always learning.
           </p>
           Front-end:
           <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
