@@ -48,16 +48,8 @@ export default function Navigation(): JSX.Element {
         )}
       >
         <div
-          className={`${styles.navItems} flex flex-col justify-center md:justify-start font-secondary`}
+          className={`${styles.navItems} flex flex-col justify-center font-secondary`}
         >
-          <h5
-            className={`${styles} font-secondary font-bold text-center mt-20 hidden md:block`}
-          >
-            Front End Developer
-          </h5>
-          <h2 className="font-secondary font-bold text-5xl text-center mb-24 leading-10 hidden md:block">
-            <strong>Kapeesh</strong>
-          </h2>
           <Link href="/">
             <a
               role="button"

@@ -1,9 +1,17 @@
-.hiddenWrapper {
-    display: none;
+@media screen and (min-width: 768px) {
+    .hiddenWrapper.block {
+        width: 300px !important;
+        right: 0;
+    }
 }
+
 .hiddenWrapper.block {
     display: block;
+    width: 100vw;
 }
+
+
+
 .fullScreen {
     height: 100% !important;
 }
@@ -62,16 +70,14 @@
     }
 }
 .navItems{
-    width: 100vw;
     height: 100%;
     overflow-y: auto;
     position: relative;
     z-index: 2;
-    opacity: 0;
     color: #ffffff;
     background-color: #0C091F;;
-    animation: fade-in 250ms ease-out;
-    animation-fill-mode: forwards;
+    /*animation: fade-in 250ms ease-out;*/
+    /*animation-fill-mode: forwards;*/
 }
 
 .navItems a {
