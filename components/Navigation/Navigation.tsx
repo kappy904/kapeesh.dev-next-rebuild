@@ -16,7 +16,6 @@ export default function Navigation(): JSX.Element {
           <i className="bg-purple text-2xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">
             K
           </i>
-          <span className="text-blue text-2xl tracking-tight">apeesh</span>
         </div>
       </Link>
       <nav

@@ -32,7 +32,11 @@ export default function Contact() {
           <div
             className={`${styles.gradient} flex text-center pl-3 mx-auto md:pl-0 justify-center items-center block shadow-2xl`}
           >
-            <a href="downloads/Kapeesh_CV.pdf" download className="text-center">
+            <a
+              href="downloads/KapeeshManilal_PassionatePeople_Resume.pdf"
+              download
+              className="text-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="124"
