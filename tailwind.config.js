@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         purple: "#0C091F",
         green: "#2A5576",
-        blue: "#461D61",
+        blue: "navy",
       },
       fontFamily: {
         display: ["Playfair Display", "sans-serif"],

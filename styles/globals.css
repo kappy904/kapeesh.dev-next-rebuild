@@ -112,7 +112,7 @@ a {
     color: #0C091F;
     -webkit-text-decoration-color: #6b6b6b;
     text-decoration-color: #6b6b6b;
-    background: linear-gradient(130deg, #0C091F 30%, #461D61);
+    background: linear-gradient(130deg, #0C091F 30%, navy);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -156,12 +156,12 @@ strong {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #f3f3f38a;
-    background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#0C091F), to(#461D61), color-stop(0.6, #0C091F));
+    background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#0C091F), to(navy), color-stop(0.6, #0C091F));
 }
 
 /*home*/
 .circle {
-    border: 3px solid #461D61;
+    border: 3px solid navy;
     margin: 0;
     padding: 0;
     outline: 0;
@@ -193,7 +193,7 @@ strong {
 .circle:hover {
     border: 3px solid #0C091F;
     transition: 0.2s linear all;
-    background: linear-gradient(70deg, #461D61 35%, #461D61 20%, #0C091F);
+    background: linear-gradient(70deg, navy 35%, navy 20%, #0C091F);
 }
 
 .circle:hover svg {
@@ -214,7 +214,7 @@ strong {
 
 .circle-a {
     border: 3px solid transparent;
-    background: linear-gradient(130deg, #0C091F 10%, #461D61 50%, #461D61);
+    background: linear-gradient(130deg, #0C091F 10%, navy 50%, navy);
     width: 431px;
     height: 431px;
     transition: 0.2s linear all;
@@ -243,7 +243,7 @@ strong {
 
 .circle-a:hover {
     transition: 0.2s linear all;
-    border-color: #461D61 !important;
+    border-color: navy !important;
     background: transparent !important;
 }
 
@@ -253,7 +253,7 @@ strong {
 
 .circle-a:hover h2 {
     transition: 0.2s linear all;
-    color: #461D61;
+    color: navy;
 }
 
 .circle-a::before {
@@ -274,7 +274,7 @@ strong {
 .circle-a::after {
     content: "";
     position: absolute;
-    background: #461D61;
+    background: navy;
     height: 3px;
     transform: rotate(-145deg);
     transform-origin: center center;
@@ -533,7 +533,7 @@ li {
 }
 
 .custom-button, .custom-button-nested p a {
-    background: linear-gradient(45deg, #000000, #5a1f9f);
+    background: linear-gradient(45deg, #000000, navy);
     padding: 5px 20px;
     font-size: 12px;
     line-height: 30px;
@@ -545,7 +545,7 @@ li {
 }
 
 .custom-button:hover, .custom-button-nested:hover p a {
-    box-shadow: 0 0 10px rgba(90, 31, 159, 0.33);
+    box-shadow: 0 0 10px navy;
 }
 
 .nav-active {
@@ -559,7 +559,7 @@ li {
     content: "";
     width: 10px;
     height: 10px;
-    background: #5a1f9f;
+    background: navy;
     border-radius: 50%;
     position: absolute;
     top: 5px;
