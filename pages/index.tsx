@@ -23,7 +23,11 @@ export default function Home() {
           <h1 className="text-4xl block font-secondary text-blue">
             Kapeesh Manilal
           </h1>
-          <p>Currently working @ Passionate People </p>
+          <p>
+            <strong className="font-medium uppercase">
+              Currently working @ Passionate People
+            </strong>
+          </p>
           <p className="my-5">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             I'm a Senior FrontEnd Engineer and JavaScript Developer Consultant.
@@ -33,123 +37,156 @@ export default function Home() {
             its methodologies, best practices and thriving community. In our
             ever changing technological landscape I am always learning.
           </p>
-          Front-end:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            HTML5
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            CSS3
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            JavaScript/Typescript
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            NgXs
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            RxJs
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            SASS
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GSAP.js
-          </span>
-          <br />
-          Back-end:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            NodeJS
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            NextJS
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            MySQL
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Firebase
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Kubernetes
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GraphQL
-          </span>
-          <br />
-          CI/CD:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Netlify
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Jenkins
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Circle CI
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Azure DevOps
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Pantheon
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Vercel
-          </span>
-          <br />
-          Frameworks:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            React / NextJS
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Angular / Scully
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Svelte / SvelteKit
-          </span>
-          <br />
-          Testing:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Jest
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Testing library
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Enzyme
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Storybook
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Jasmine
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            BrowserStack
-          </span>
-          <br />
-          Analytics:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GA
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GTM
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            MixPanel
-          </span>
-          <br />
-          Cloud Services:
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GitHub
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            Bitbucket
-          </span>
-          <span className="bg-blue hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full mr-1">
-            GitLab
-          </span>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">
+              Front-end:
+            </strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                HTML5
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                CSS3
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                JavaScript/Typescript
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                NgXs
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                RxJs
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                SASS
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GSAP.js
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">Back-end:</strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                NodeJS
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                NextJS
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                MySQL
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Firebase
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Kubernetes
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GraphQL
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">CI/CD:</strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Netlify
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Jenkins
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Circle CI
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Azure DevOps
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Pantheon
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Vercel
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">
+              Frameworks:
+            </strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                React / NextJS
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Angular / Scully
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Svelte / SvelteKit
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">Testing:</strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Jest
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Testing library
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Enzyme
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Storybook
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Jasmine
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                BrowserStack
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">
+              Analytics:
+            </strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GA
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GTM
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                MixPanel
+              </span>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-8">
+              Cloud Services:
+            </strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GitHub
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Bitbucket
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GitLab
+              </span>
+            </div>
+          </div>
           <hr className="my-5" />
-          <a className="custom-button" href="mailto:kapeeshmanilal@gmail.com">
+          <a
+            className="custom-button md:my-10 mb-10"
+            href="mailto:kapeeshmanilal@gmail.com"
+          >
             CONTACT ME
           </a>
         </div>
