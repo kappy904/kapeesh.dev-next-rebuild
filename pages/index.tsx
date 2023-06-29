@@ -38,7 +38,7 @@ export default function Home() {
             ever changing technological landscape I am always learning.
           </p>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">
+            <strong className="uppercase font-bold leading-9">
               Front-end:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">Back-end:</strong>
+            <strong className="uppercase font-bold leading-9">Back-end:</strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 NodeJS
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">CI/CD:</strong>
+            <strong className="uppercase font-bold leading-9">CI/CD:</strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 Netlify
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">
+            <strong className="uppercase font-bold leading-9">
               Frameworks:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">Testing:</strong>
+            <strong className="uppercase font-bold leading-9">Testing:</strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 Jest
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">
+            <strong className="uppercase font-bold leading-9">
               Analytics:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-8">
+            <strong className="uppercase font-bold leading-9">
               Cloud Services:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
