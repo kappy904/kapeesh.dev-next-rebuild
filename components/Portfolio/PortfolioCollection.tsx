@@ -50,13 +50,13 @@ export default function PortfolioCollection({
               )}
             </div>
             <div className="px-3">
-              <h2 className="font-secondary tracking-tighter md:text-2xl text-xl mb-4 font-extrabold text-blue">
+              <h2 className="md:text-2xl text-xl mb-4 font-extrabold text-blue">
                 {portfolio?.fields.title}
               </h2>
               <div className="font-light font-primary leading-6 text-base tracking-wider mb-6">
                 <ReactMarkdown>{portfolio?.fields.description}</ReactMarkdown>
               </div>
-              <p className="font-bold font-secondary mb-2 text-blue">
+              <p className="font-bold font-primary mb-2 text-blue">
                 My top learnings
               </p>
               <ul className="font-light font-primary leading-6 text-base tracking-wider list-disc pl-5 mb-6">
@@ -64,7 +64,7 @@ export default function PortfolioCollection({
               </ul>
               {portfolio?.fields.awards && (
                 <>
-                  <p className="font-bold font-secondary mb-2 text-blue">
+                  <p className="font-bold font-primary mb-2 text-blue">
                     Awards
                   </p>
                   <ul className="font-light font-primary leading-6 text-base tracking-wider  tracking-wider list-disc pl-5 mb-6">

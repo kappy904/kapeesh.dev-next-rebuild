@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="flex flex-row justify-center font-secondary py-2">
+    <footer className="flex flex-row justify-center font-secondary py-2 md:hidden">
       <Link href="/">
         <a
           role="button"

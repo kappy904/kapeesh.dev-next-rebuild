@@ -38,7 +38,7 @@ export default function Navigation(): JSX.Element {
       <div
         className={classNames(
           `${styles.hiddenWrapper}`,
-          "flex justify-around items-center flex overflow-hidden fixed",
+          "flex justify-around items-center md:flex-row overflow-hidden fixed",
           {
             [styles.fullScreen]: isActive,
             [styles.block]: isActive,
@@ -47,7 +47,7 @@ export default function Navigation(): JSX.Element {
         )}
       >
         <div
-          className={`${styles.navItems} flex flex-col justify-center font-secondary`}
+          className={`${styles.navItems} flex flex-col md:flex-row justify-center md:justify-space-between font-secondary md:py-8 shadow-md`}
         >
           <Link href="/">
             <a
@@ -55,7 +55,7 @@ export default function Navigation(): JSX.Element {
               tabIndex={0}
               className={`${
                 router.pathname === "/" ? "nav-active" : ""
-              } text-2xl text-center mb-4 font-primary`}
+              } text-xl text-center font-primary md:uppercase py-5 md:py-0`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -70,7 +70,7 @@ export default function Navigation(): JSX.Element {
               tabIndex={-2}
               className={`${
                 router.pathname === "/portfolio" ? "nav-active" : ""
-              } text-2xl text-center mb-4 font-primary`}
+              } text-xl text-center font-primary md:uppercase py-5 md:py-0`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -85,7 +85,7 @@ export default function Navigation(): JSX.Element {
               tabIndex={-3}
               className={`${
                 router.pathname === "/testimonials" ? "nav-active" : ""
-              } text-2xl text-center mb-4 font-primary`}
+              } text-xl text-center font-primary md:uppercase py-5 md:py-0`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);
@@ -100,7 +100,7 @@ export default function Navigation(): JSX.Element {
               tabIndex={-5}
               className={`${
                 router.pathname === "/contact" ? "nav-active" : ""
-              } text-2xl text-center mb-4 font-primary`}
+              } text-xl text-center font-primary md:uppercase py-5 md:py-0`}
               onClick={() => setIsActive(!isActive)}
               onKeyDown={() => {
                 setIsActive(!isActive);

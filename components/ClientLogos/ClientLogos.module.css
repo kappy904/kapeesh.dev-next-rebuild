@@ -1,6 +1,8 @@
 .clientWrapper {
     width: 100%;
+    max-width: 1400px;
     height: 100%;
+    margin: 0 auto 3rem;
 }
 
 .clientWrapper div {

@@ -565,6 +565,13 @@ li {
     top: 5px;
     right: -13px;
 }
+
+@media screen and (max-width: 786px) {
+    .nav-active::after {
+        top: 20px;
+    }
+}
+
 footer {
     background: #0C091F;
 }
