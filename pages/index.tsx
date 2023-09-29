@@ -29,12 +29,14 @@ export default function Home() {
       <div className="container flex md:flex-row flex-col md:flex-row-reverse justify-center md:pt-40 pt-20 py-2 px-5 gap-3 max-w-screen-xl">
         <div className="md:w-1/3 w-full">
           <img
-            src="https://media.licdn.com/dms/image/D4E03AQGCkFhJSwr3Og/profile-displayphoto-shrink_400_400/0/1667496899170?e=1693440000&v=beta&t=nagi5F3hh7y6ndxNmmGfjqvqy_2sdi75RHzO4giKLwM"
+            src="/images/home/kent-kappy.png"
             alt="Kapeesh Manilal"
-            width={200}
-            height={300}
-            className="object-cover shadow-2xl rounded-full mx-auto"
+            width={400}
+            className="object-cover shadow-2xl mx-auto"
           />
+          <small className="block text-center">
+            Meeting one of my heros at React Live 2023
+          </small>
         </div>
         <div className="md:w-2/3 w-full">
           <h1 className="text-4xl block font-secondary text-blue">
