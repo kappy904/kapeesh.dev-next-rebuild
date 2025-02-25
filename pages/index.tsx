@@ -49,7 +49,7 @@ export default function Home() {
           </p>
           <p className="my-5">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm a Senior FrontEnd Engineer and JavaScript Developer Consultant.
+            I'm a Senior FrontEnd Engineer with 13 years of experience.
             I pride myself in creating performant software solutions, leadership
             and knowledge sharing for Product, Software and E-Commerce
             companies. My framework of choice is React as I firmly believe in
@@ -62,12 +62,6 @@ export default function Home() {
             </strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                HTML5
-              </span>
-              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                CSS3
-              </span>
-              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 JavaScript/Typescript
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
@@ -77,30 +71,41 @@ export default function Home() {
                 RxJs
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                SASS
+                TailwindCSS/SASS/LESS/SCSS
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 GSAP.js
               </span>
             </div>
           </div>
-          <div className="flex md:flex-row flex-col">
-            <strong className="uppercase font-bold leading-9">Back-end:</strong>
+            <div className="flex md:flex-row flex-col">
+                <strong className="uppercase font-bold leading-9">Animation:</strong>
+                <div className="flex flex-wrap justify-start my-1">
+                <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                    Framer Motion
+                </span>
+                    <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                    LottieFiles
+                </span>
+                    <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                GSAP.js
+              </span>
+                </div>
+            </div>
+            <div className="flex md:flex-row flex-col">
+                <strong className="uppercase font-bold leading-9">Back-end:</strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 NodeJS
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                NextJS
+                NestJS
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 MySQL
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 Firebase
-              </span>
-              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                Kubernetes
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 GraphQL
@@ -128,11 +133,17 @@ export default function Home() {
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 Vercel
               </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                JFROG
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Kubernetes
+              </span>
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
             <strong className="uppercase font-bold leading-9">
-              Frameworks:
+            Frameworks:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
@@ -143,6 +154,9 @@ export default function Home() {
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 Svelte / SvelteKit
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                NestJS / (BFF or API Layers)
               </span>
             </div>
           </div>
@@ -162,10 +176,13 @@ export default function Home() {
                 Storybook
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                Jasmine
+                BrowserStack
               </span>
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                BrowserStack
+                Playwright
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Wiremock
               </span>
             </div>
           </div>
