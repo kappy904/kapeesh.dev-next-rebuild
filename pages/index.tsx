@@ -73,9 +73,6 @@ export default function Home() {
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 TailwindCSS/SASS/LESS/SCSS
               </span>
-              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                GSAP.js
-              </span>
             </div>
           </div>
           <div className="flex md:flex-row flex-col">
