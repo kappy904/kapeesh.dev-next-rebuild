@@ -49,12 +49,12 @@ export default function Home() {
           </p>
           <p className="my-5">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm a Senior FrontEnd Engineer with 13 years of experience.
-            I pride myself in creating performant software solutions, leadership
-            and knowledge sharing for Product, Software and E-Commerce
-            companies. My framework of choice is React as I firmly believe in
-            its methodologies, best practices and thriving community. In our
-            ever changing technological landscape I am always learning.
+            I'm a Senior FrontEnd Engineer with 13 years of experience. I pride
+            myself in creating performant software solutions, leadership and
+            knowledge sharing for Product, Software and E-Commerce companies. My
+            framework of choice is React as I firmly believe in its
+            methodologies, best practices and thriving community. In our ever
+            changing technological landscape I am always learning.
           </p>
           <div className="flex md:flex-row flex-col">
             <strong className="uppercase font-bold leading-9">
@@ -78,22 +78,24 @@ export default function Home() {
               </span>
             </div>
           </div>
-            <div className="flex md:flex-row flex-col">
-                <strong className="uppercase font-bold leading-9">Animation:</strong>
-                <div className="flex flex-wrap justify-start my-1">
-                <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                    Framer Motion
-                </span>
-                    <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
-                    LottieFiles
-                </span>
-                    <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-9">
+              Animation:
+            </strong>
+            <div className="flex flex-wrap justify-start my-1">
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                Framer Motion
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
+                LottieFiles
+              </span>
+              <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 GSAP.js
               </span>
-                </div>
             </div>
-            <div className="flex md:flex-row flex-col">
-                <strong className="uppercase font-bold leading-9">Back-end:</strong>
+          </div>
+          <div className="flex md:flex-row flex-col">
+            <strong className="uppercase font-bold leading-9">Back-end:</strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">
                 NodeJS
@@ -143,7 +145,7 @@ export default function Home() {
           </div>
           <div className="flex md:flex-row flex-col">
             <strong className="uppercase font-bold leading-9">
-            Frameworks:
+              Frameworks:
             </strong>
             <div className="flex flex-wrap justify-start my-1">
               <span className="bg-blue p-1 text-white text-xs py-1 px-3 rounded-full md:mx-1 mr-2 my-1">

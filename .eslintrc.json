@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb-typescript-prettier"
-  ],
+  "extends": ["next/core-web-vitals", "airbnb-typescript-prettier"],
   "rules": {
     // needed from CMS
     "jsx-a11y/img-redundant-alt": "off",
@@ -13,6 +10,8 @@
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     // next app.tsx
     "react/jsx-props-no-spreading": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    // fix for package name confusion
+    "import/no-extraneous-dependencies": "off"
   }
 }

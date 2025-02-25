@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
-import Cv from "../components/Cv/Cv";
+import Header from "@/components/Header/Header";
+import Cv from "@/components/Cv/Cv";
 
 export default function CvPage(): React.ReactNode {
   return (

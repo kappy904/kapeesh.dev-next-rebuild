@@ -1,30 +1,32 @@
-
 .gradient {
-    background: linear-gradient(130deg, theme('colors.purple') 30%, theme('colors.blue'));
-    width: 200px;
-    height: 200px;
-    flex:none;
+  background: linear-gradient(
+    130deg,
+    theme("colors.purple") 30%,
+    theme("colors.blue")
+  );
+  width: 200px;
+  height: 200px;
+  flex: none;
 }
 
-.forceWhite{
-    -webkit-background-clip: revert;
-    background-clip: revert;
-    -webkit-text-fill-color: white;
-    text-fill-color: white;
+.forceWhite {
+  -webkit-background-clip: revert;
+  background-clip: revert;
+  -webkit-text-fill-color: white;
+  text-fill-color: white;
 }
 .smallSvg {
-    width: 80px;
+  width: 80px;
 }
 .contactBlock {
-    height: 300px;
-    text-indent: -13px;
+  height: 300px;
+  text-indent: -13px;
 }
 .contactBlock p {
-    transform: rotate(45deg) translateX(200px);
+  transform: rotate(45deg) translateX(200px);
 }
 @media screen and (max-width: 640px) {
-    .contactBlock {
-        display: none;
-    }
+  .contactBlock {
+    display: none;
+  }
 }
-

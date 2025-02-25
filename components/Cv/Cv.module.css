@@ -1,33 +1,36 @@
-
 .gradient {
-    background: linear-gradient(130deg, theme('colors.purple') 30%, theme('colors.blue'));
-    width: 300px;
-    height: 300px;
-    flex:none;
+  background: linear-gradient(
+    130deg,
+    theme("colors.purple") 30%,
+    theme("colors.blue")
+  );
+  width: 300px;
+  height: 300px;
+  flex: none;
 }
 
-.forceWhite{
-    -webkit-background-clip: revert;
-    background-clip: revert;
-    -webkit-text-fill-color: white;
-    text-fill-color: white;
+.forceWhite {
+  -webkit-background-clip: revert;
+  background-clip: revert;
+  -webkit-text-fill-color: white;
+  text-fill-color: white;
 }
 
 .mb10 {
-    opacity: 0;
-    animation: animation-move-up 3s ease-out;
-    animation-fill-mode: forwards;
-    top: -20px;
+  opacity: 0;
+  animation: animation-move-up 3s ease-out;
+  animation-fill-mode: forwards;
+  top: -20px;
 }
 
 @keyframes animation-move-up {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        top: 0;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+    transform: translateY(0);
+  }
 }

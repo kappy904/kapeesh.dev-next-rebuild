@@ -1,9 +1,24 @@
-import Head from "next/head";
 import { GetStaticProps } from "next";
-import Testimonials from "../components/Testimonials/Testimonials";
-import Header from "../components/Header/Header";
-import { Props } from "../components/Testimonials/Testimonials.types";
-import { client } from "../utils/utils";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import Header from "@/components/Header/Header";
+import Head from "next/head";
+import {
+  Testimonial,
+  Mentee,
+} from "@/components/Testimonials/Testimonials.types";
+import { client } from "@/utils/utils";
+
+interface Props {
+  testimonials: Testimonial;
+  mentees: Mentee;
+}
+
+const getTestimonials = async (type: string) => {
+  const response = await client.getEntries({
+    content_type: type,
+  });
+  return response.items;
+};
 
 export default function TestimonialsPage({
   testimonials,
@@ -27,14 +42,10 @@ export default function TestimonialsPage({
     </>
   );
 }
-export const getStaticProps: GetStaticProps = async () => {
-  const testimonials = await client
-    .getEntries({ content_type: "testimonial" })
-    .then((response) => response.items);
 
-  const mentees = await client
-    .getEntries({ content_type: "mentees" })
-    .then((response) => response.items);
+export const getStaticProps: GetStaticProps = async () => {
+  const testimonials = await getTestimonials("testimonial");
+  const mentees = await getTestimonials("mentees");
 
   return {
     props: {

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
-import Contact from "../components/Contact/Contact";
+import Header from "@/components/Header/Header";
+import Contact from "@/components/Contact/Contact";
 
 export default function ContactPage(): React.ReactNode {
   return (

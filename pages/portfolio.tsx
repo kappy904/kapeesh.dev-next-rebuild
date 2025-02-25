@@ -1,10 +1,10 @@
-import Head from "next/head";
 import { GetStaticProps } from "next";
-import Header from "../components/Header/Header";
-import PortfolioCollection from "../components/Portfolio/PortfolioCollection";
-import { client } from "../utils/utils";
-import ClientLogos from "../components/ClientLogos/ClientLogos";
-import { Clientlogo, Portfolio } from "../components/Portfolio/Portfolio.types";
+import Header from "@/components/Header/Header";
+import PortfolioCollection from "@/components/Portfolio/PortfolioCollection";
+import ClientLogos from "@/components/ClientLogos/ClientLogos";
+import { client } from "@/utils/utils";
+import { Clientlogo, Portfolio } from "@/components/Portfolio/Portfolio.types";
+import Head from "next/head";
 
 interface Props {
   portfolios: Portfolio;

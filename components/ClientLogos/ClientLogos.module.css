@@ -1,21 +1,21 @@
 .clientWrapper {
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    margin: 0 auto 3rem;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto 3rem;
 }
 
 .clientWrapper div {
-    margin: 1em;
-    position: relative;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    right: auto;
+  margin: 1em;
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
 }
 
-@media screen and (max-width :992px) {
-    .clientWrapper div {
-        margin: 5px
-    }
+@media screen and (max-width: 992px) {
+  .clientWrapper div {
+    margin: 5px;
+  }
 }
