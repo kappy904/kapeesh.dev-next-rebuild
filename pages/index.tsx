@@ -44,7 +44,7 @@ export default function Home() {
           </h1>
           <p>
             <strong className="font-medium uppercase">
-              Currently working @ Passionate People
+              Currently working @ SUITSUPPLY
             </strong>
           </p>
           <p className="my-5">
